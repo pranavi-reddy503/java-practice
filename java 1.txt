@@ -56,3 +56,58 @@ int b=sc.nextInt();
 System.out.println(a*b);
 }
 }
+
+Q6.Write a Java program that takes a number as input and prints its multiplication table up to 10.
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+for(int i=1;i<n;i++){
+System.out.print(n+"*"+i+"="+(n*i));
+}
+}
+}
+
+Q7.Write a Java program to display the following pattern.
+Sample Pattern :
+
+   J    a   v     v  a                                                  
+   J   a a   v   v  a a                                                 
+J  J  aaaaa   V V  aaaaa                                                
+ JJ  a     a   V  a     a
+class Main{
+public static void main(String args[]){
+System.out.println("");
+System.out.println("");
+System.out.println("");
+System.out.println("");
+}
+}
+
+Q8.Write a Java program to print the area and perimeter of a circle.
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+double radius=sc.nextDouble();
+double perimeter=2*Math.PI*radius;
+double area=Math.PI*radius*radius;
+System.out.prinln(perimeter);
+System.out.println(Area);
+}
+}
+
+Q9.Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
+System.out.println("The average of three numbers is "+(a+b+c)/3);
+}
+}
+
+Q10.Write a Java program to print the area and perimeter of a rectangle.
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
