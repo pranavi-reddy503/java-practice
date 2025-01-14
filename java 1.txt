@@ -140,3 +140,79 @@ System.out.println(b);
 }
 }
 
+Q12.Write a Java program to compare two numbers.
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+System.out.println(a>b);
+System.out.println(a<b);
+System.out.println(a>=b);
+System.out.println(a<=b);
+System.out.println(a!=b);
+System.out.println(b==a);
+}
+}
+
+Q13.Write a Java program and compute the sum of an integer's digits
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int num=sc.nextInt();
+int sum=0;
+while(num !=0){
+sum+= num%10;
+num = num/10;
+}
+System.out.println("The sum of digits is"+ sum);
+}
+}
+
+Q14.Write a Java program to reverse a string.
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+String st=sc.nextLine();
+String reversed="";
+for(int i=st.length()-1;i>=0;i--){
+reversed += st.charAt(i);
+}
+System.out.println("reversed string is"+reversed);
+}
+}
+
+Q15.Write a Java program to count letters, spaces, numbers and other characters in an input string.
+import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+String st=sc.nextLine();
+int letterCount = 0;
+int spaceCount = 0;
+int numberCount = 0;
+int otherCount = 0;
+for(int i=0;i<st.length();i++){
+char ch = input.charAt(i);
+if (Character.isLetter(ch)) {
+letterCount++;
+ }
+else if (Character.isDigit(ch)) {
+numberCount++;
+}
+else if (Character.isSpaceChar(ch)) {
+spaceCount++;
+ } 
+else {
+otherCount++;
+}
+}
+System.out.println("Letters: " + letterCount);
+System.out.println("Spaces: " + spaceCount);
+System.out.println("Numbers: " + numberCount);
+System.out.println("Other characters: " + otherCount);
+}
+}
